@@ -1,0 +1,389 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <link rel="menifest" href="menifest.json" />
+    <link rel="apple-touch-icon" href="dgmc.png" />
+    <meta name="apple-mobile-web-app-status-bar" content="#db4938" />
+    <meta name="theme-color" color="#db4938" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Doon Gita Meditation Classes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<!-- https://rockstartushar.github.io/doon-geeta-kbc.github.io/ -->
+<body>
+<div id="container" class="container">
+    <div id="login">
+        <center>
+            <div id="icon">
+                <img id="login-icon" src="kbc-icon.png" width="30%" />
+            </div>
+            <form onsubmit="enterGame()">
+                <div class="form-group">
+                    <label type="text">Your Name:</label>
+                    <strong><b><input type="text" name="name" id="name" class="form-control" value="" required></b></strong>
+                </div>
+                <button type="submit" id="enter" class="btn btn-primary">Enter</button>
+            </form>
+        </center>
+    </div>
+    <!-- Question 1-->
+    <div id="kbc-screen" style="display: none; border: 1px solid pink;">
+        <center>
+            <p id="heading"></p>
+            <div id="q-container">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(1)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(1)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 1.) If a evil person prays to Krishna for money, what will be result? </label>
+            <br />
+            <hr />
+            <div >
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. He will get riches</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. He will get pure</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">C. He will get Krishna</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">D. All of the above</button>
+            </div>
+                </form>
+            </div>
+
+            <!-- Question 2-->
+            <div id="q-2" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(2)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(2)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 2.) Which of the species of life is best?</label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. Deva</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. Horse</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">C. Yaksha</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary wrong">D. Human life on earth</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 3-->
+            <div id="q-3" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(3)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(3)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 3.) An Intelligent person knows </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. Money Making</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. Science</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">C. Techniques</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">D. Who is he</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 4-->
+            <div id="q-4" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(4)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(4)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 4.) One can understand God only by </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. By one's Endeavours</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. By Having Desires</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">C. By Serving</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">D. If god reveals himself</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 5-->
+            <div id="q-5" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(5)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(5)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 5.) What is Ultimate Training? </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. To Know Good Things</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. To Know How to Satisfy Senses</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">C. To know how to become krishna concious</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">D. Doing One's Duty Perfectly</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 6-->
+            <div id="q-6" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(6)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(6)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 6.) By Which Process One Feel God Inside Oneself </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. By Doing Some Meditation</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. By Some Aasanas</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">C. By vedic information</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">D. By Some Yoga</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 7-->
+            <div id="q-7" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(7)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(7)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 7.) Which of the following is the sign of ignorance in foolish people being unaware that there is </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. Poverty</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. Failure</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">C. Malnuitrition</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">D. None of the Above</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 8-->
+            <div id="q-8" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(8)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(8)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 8.) This life is actually a preparation for </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. Liberation</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. Next Life</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">C. Both a & b</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">D. None of the Above</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 9-->
+            <div id="q-9" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(9)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(9)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 9.) In Mode Of Ignorance, One </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. Knows What is God and Devotion</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. Knows How to become Happy</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">C. Does not know What is God and the Goal of Life</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">D. Does not want happiness</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 10-->
+            <div id="q-10" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(10)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(10)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 10.) Krishna likes bhoga:- </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. Which is tasty</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. Cooked with very attentiveness</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary wrong">C. Which is made of butter</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">D. Anything which is prepared with devotion</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 11-->
+            <div id="q-11" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(11)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(11)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 11.) Devotees are in the </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. Goodness</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. Passion</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">C. Above Sudhh Sattva</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">D. Spiritual World</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 12-->
+            <div id="q-12" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(12)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(12)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 12.) What is Cheating? </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. In Mode Of Goodness</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. Goodness and Passion</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">C. Passion and Ignorance</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">D. Fully Ignorance</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 13-->
+            <div id="q-13" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(13)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(13)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 13.) What is spiritual pleasure? </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">A. To gratify our senses</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. To derive happiness from lord's service</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary wrong">C. To renounce everything</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">D. To please lord</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 14-->
+            <div id="q-14" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(14)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(14)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 14.) What is most important for good chanting?  </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="nextRight()" type="button" class="btn btn-primary right">A. Devotee Association</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">B. Good Beads</button>
+                <button onclick="nextRight()" type="button" class="btn btn-primary wrong">C. Morning time</button>
+                <button onclick="nextWrong()" type="button" class="btn btn-primary wrong">D. Sitting straight</button>
+                </div>
+                </form>
+            </div>
+
+            <!-- Question 15-->
+            <div id="q-15" style="display: none;">
+                <div style="background: darkblue; border: 3px solid white; border-radius: 20px;">
+                    <a class="a-fifty" onclick="showFifty(15)"><img src="fifty.png" class="img-fifty" width="10%" height="10%"></a>
+                    <a class="a-audience" onclick="showPoll(15)"><img src="audience.png" class="img-audience" width="10%" height="7%"></a>
+                </div>
+                <div id="poll-container">
+                </div>
+                <p id="timer-cover"><a style="color: white;" id="timer">0</a></p>
+                <form id="q-form">
+            <label class="que-d" for="question">Que 15.) What is austerity?  </label>
+            <br />
+            <hr />
+            <div>
+                <button onclick="rtShowResult()" type="button" class="btn btn-primary right">A. To tolerate pains on the instructions of the spiritual master</button>
+                <button onclick="wgShowResult()" type="button" class="btn btn-primary wrong">B. To be baffled by material nature</button>
+                <button onclick="wgShowResult()" type="button" class="btn btn-primary wrong">C. To struggle with disease</button>
+                <button onclick="wgShowResult()" type="button" class="btn btn-primary wrong">D. None of these</button>
+            </div>
+                <strong>This is Last Question.</strong>
+                </form>
+            </div>
+
+                <div id="poll-cover" style=" display:none; position: absolute; background-color: darkblue; width: 100%; padding: 40%; opacity: 1;">
+                    <center>
+                    <a style="opacity: 1"><i class="fas fa-times-circle fa-lg" style="opacity: 0;"></i></a>
+                        <h4><strong>Audience Poll</strong></h4>
+                        Option A: <span id="op1"></span>%<br />
+                        Option B: <span id="op2"></span>%<br />
+                        Option C: <span id="op3"></span>%<br />
+                        Option D: <span id="op4"></span>%<br />
+                    </center>
+                </div>
+            </div>
+        </center>
+    </div>
+</div>
+
+<script type="text/javascript" src="script.js">
+</script>
+</body>
+</html>
