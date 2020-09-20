@@ -66,6 +66,10 @@
 		font-size: 8px;
 	}
 
+	#share-btn:hover {
+		background-image: linear-gradient(yellow, red);
+	}
+
 	@media only screen and (min-width: 600px) {
 		#q-form div {
 		margin-left: 30%;
