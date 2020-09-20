@@ -1,0 +1,73 @@
+	body {
+		padding: 0;
+		margin: 0;
+		background: linear-gradient(to right, black, purple);
+		color: white;
+		font-size: 20px;
+		animation: lightening 5s infinite;
+	}
+	
+	.btn {
+		font-size: 17px;
+	}
+
+	.form-control {
+		text-align: center;
+	}
+
+	#timer-cover {
+		margin-top: 100px;
+		margin-bottom: 40px;
+	}
+
+	#timer {
+		padding: 30px;
+		border-radius: 80px;
+		background-image: radial-gradient(white, black, black, white, white);
+		font-weight: bolder;
+		font-size: 1.5em;
+	}
+
+	.que-d {
+		border: 2px solid white;
+		padding: 10px;
+		border-radius: 20px;
+		border-style: double;
+	}
+
+	#q-form div {
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+
+	.right, .wrong {
+		border: 2px solid white;
+		padding: 5px;
+		border-radius: 20px;
+		background: transparent;
+		outline: none;
+		transition: 2sec;
+		width: 240px;
+		max-width: 100%;
+		overflow: hidden;
+		white-space: normal;
+	}
+
+	.right:hover, .wrong:hover {
+		background-image: linear-gradient(to right, yellow, gold);
+	}
+
+	.right:active, .wrong:active {
+		background-image: linear-gradient(to right, yellow, gold);
+	}
+
+	.icon-text {
+		display: inline-block;
+		font-size: 8px;
+	}
+
+	@media only screen and (min-width: 600px) {
+		#q-form div {
+		margin-left: 30%;
+		margin-right: 30%;
+	}
