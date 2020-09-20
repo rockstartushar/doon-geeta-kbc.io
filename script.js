@@ -186,7 +186,7 @@ var que=1, rtclick=0, wgclick=0, i=0, op, timetaken=0, kbcaudio=0, audio1=0;
     				<h4>Wrong answer: ${wgclick}</h4>   
     				<h4>Time Taken: ${timetaken} seconds</h4>
     				<p>Let other's too enjoy playing this game..</p>
-    			<a style="opacity:1;border: 0.5px solid gold;border-radius:10px; outline: none;text-decoration: none; padding: 6px; background:transparent; " href= "whatsapp://send?text=I enjoyed🤩🤩 playing this amazing KBC game💖💖..check your knowledge🤷‍♂🤔🤔..click the link🙏🙏..have fun😉 https://rockstartushar.github.io/doon-geeta-kbc.io/" data-action="share/whatsapp/share" target="_blank"> Share to whatsapp!!</a>
+    			<a id="share-btn" style="opacity:1;border: 0.5px solid gold;border-radius:10px; outline: none;text-decoration: none; padding: 6px; background:transparent; " href= "whatsapp://send?text=I enjoyed🤩🤩 playing this amazing KBC game💖💖..check your knowledge🤷‍♂🤔🤔..click the link🙏🙏..have fun😉 https://rockstartushar.github.io/doon-geeta-kbc.io/" data-action="share/whatsapp/share" target="_blank"> Share to whatsapp!!</a>
     			<center>
     			</div>
     			</form><br>`;
