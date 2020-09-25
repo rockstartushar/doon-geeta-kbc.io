@@ -193,7 +193,7 @@
     				<h4>Wrong answer: ${wgclick}</h4>   
     				<h4>Time Taken: ${timetaken} seconds</h4>
     				<p>Let other's too enjoy playing this game..</p>
-    			<a id="share-btn" style="opacity:1;border: 0.5px solid gold;border-radius:10px; outline: none;text-decoration: none; padding: 6px; background:transparent;" href= "whatsapp://send?text=I enjoyed🤩🤩 playing this amazing KBC game💖💖..check your knowledge🤷‍♂🤔🤔 https://rockstartushar.github.io/doon-geeta-kbc.github.io/..click the link🙏🙏 & have fun😉: https://rockstartushar.github.io/doon-geeta-kbc.github.io/ _Get free demo Gita Meditation Sessions by clicking here: https://gitajoy.co.in/index.html#register " data-action="share/whatsapp/share" target="_blank"> Share to whatsapp!!</a>
+    			<a id="share-btn" style="opacity:1;border: 0.5px solid gold;border-radius:10px; outline: none;text-decoration: none; padding: 6px; background:transparent;" href= "whatsapp://send?text=I enjoyed🤩🤩 playing this amazing KBC game💖💖..check your knowledge🤷‍♂🤔🤔 https://rockstartushar.github.io/doon-geeta-kbc.io/ ..🙏have fun..Also, _Get free demo Gita Meditation Sessions by clicking here: https://gitajoy.co.in/index.html#register " data-action="share/whatsapp/share" target="_blank"> Share to whatsapp!!</a>
     			<center>
     			</div>
     			</form><br>
