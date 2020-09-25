@@ -198,7 +198,7 @@
     			</div>
     			</form><br>
     			<center>
-    			<a id="register-btn" style="opacity:1;border: 0.5px solid gold;border-radius:10px; outline: none;text-decoration: none; padding: 6px; background:transparent;" target="_blank" href="https://gitajoy.co.in/index.html#register">Get free Gita Meditation Classes</
+    			<a id="register-btn" style="opacity:1;border: 0.5px solid gold;border-radius:10px; outline: none;text-decoration: none; padding: 6px; background-image: linear-gradient(yellow, red);" target="_blank" href="https://gitajoy.co.in/index.html#register">Get free Gita Meditation Classes</
     			</center>`;
     	document.getElementById("container").innerHTML=board;
     	playFlute();
