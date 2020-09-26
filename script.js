@@ -193,13 +193,14 @@
     				<h4>Wrong answer: ${wgclick}</h4>   
     				<h4>Time Taken: ${timetaken} seconds</h4>
     				<p>Let other's too enjoy playing this game..</p>
-    			<a id="share-btn" style="opacity:1;border: 0.5px solid gold;border-radius:10px; outline: none;text-decoration: none; padding: 6px; background:transparent;" href= "whatsapp://send?text=I enjoyed🤩🤩 playing this amazing KBC game💖💖..check your knowledge🤷‍♂🤔🤔 https://rockstartushar.github.io/doon-geeta-kbc.io/ ..🙏have fun..Also, _Get free demo Gita Meditation Sessions by clicking here: https://gitajoy.co.in/index.html#register " data-action="share/whatsapp/share" target="_blank"> Share to whatsapp!!</a>
-    			<center>
+    			<a id="share-btn" style="opacity:1;border: 0.5px solid gold;border-radius:10px; outline: none;text-decoration: none; padding: 6px; background:transparent;" href= "whatsapp://send?text=I enjoyed🤩🤩 playing this amazing KBC game💖💖..check your knowledge🤷‍♂🤔🤔 https://rockstartushar.github.io/doon-geeta-kbc.io/ ..🙏have fun..Also, _Get free demo Gita Meditation Sessions by clicking here: https://gitajoy.co.in/index.html#register " data-action="share/whatsapp/share" target="_blank"> Share on whatsapp!!</a>
+    			</center>
     			</div>
     			</form><br>
     			<center>
-    			<a id="register-btn" style="opacity:1;border: 0.5px solid gold;border-radius:10px; outline: none;text-decoration: none; padding: 6px; background-image: linear-gradient(yellow, red);" target="_blank" href="https://gitajoy.co.in/index.html#register">Get free Gita Meditation Classes</
-    			</center>`;
+    			<p>To know the right answers..</p>
+    			<a id="register-btn" target="_blank" href="https://gitajoy.co.in/quizzes.html"><button style="opacity:1;border: 0.5px solid gold;border-radius:10px; outline: none;text-decoration: none; padding: 6px; background-image: linear-gradient(yellow, red);white-space: normal; " >Click here</
+    			</button></center>`;
     	document.getElementById("container").innerHTML=board;
     	playFlute();
 	}
